@@ -32,3 +32,11 @@ def multiply(a, b):
 
 print(multiply(4, 6))
 print(multiply(10, 3))
+
+#Salario Anual
+
+def yearly_salary(hourly_rate, hours_per_week):
+    weekly = hourly_rate * hours_per_week
+    yearly = weekly * 52
+    return yearly
+print(yearly_salary(20,40))

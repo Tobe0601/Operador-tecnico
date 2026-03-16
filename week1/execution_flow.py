@@ -10,12 +10,18 @@ test()
 print("4")
 
 
-def weekly_pay(hours_per_day,rate):
-    return hours_per_day * rate * 7
+def weekly_pay(daily, weekly, monthly, rate):
+    daily * rate
+    weekly = daily * 7
+    monthly = weekly * 4
+    return daily, weekly, monthly
 
 hours = float(input("How many hours do you work per day?: "))
 rate = float(input("How much do you get per hour?: "))
 
-result = weekly_pay(hours, rate)
+day = print ("This is your income per day: ")
+week = "This is your income per week: "
+month = "This is your income per month: "
 
-print(result)
+day, week, month = weekly_pay(hours, rate, week, month)
+

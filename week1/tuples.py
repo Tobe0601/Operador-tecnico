@@ -1,0 +1,1 @@
+tupla = ("dato 1", "dato 2")
